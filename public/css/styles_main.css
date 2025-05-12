@@ -1,0 +1,46 @@
+@import url(about.css);
+@import url(contact.css);
+@import url(home.css);
+@import url(menu.css);
+@import url(nav.css);
+
+/*import fontes*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FF316B; 
+    --secondary: #FDF2F8;
+    --nav-tittle: #FFBFD9;
+}
+/*!EXEMPLO DE COMO USAR COR COM VARIÁVEL
+color: var(--primary);
+*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*botões*/
+button{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.426);
+    background-color: var(--primary);
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: scale(1.05);
+}
