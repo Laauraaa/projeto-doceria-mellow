@@ -1,9 +1,15 @@
 nav{
     display:flex;
     justify-content:space-between;
-    padding: 12px;
+    padding: 10px;
     align-items: center;
     font-size: 15px;
+
+    /*
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    */
 }
 h3{
     color: var(--nav-tittle);
@@ -22,13 +28,12 @@ h3{
 .button-nav-ifood > button{
     display: flex;
     align-items: center;
-    gap: 2px;
     margin: 0px;
-    padding: 5px;
+    padding: 3px;
     border-radius: 10px;
     font-size: 15px;
 }
 .material-icons{
-    font-size: 18px;
+    font-size: 15px;
 }
 
