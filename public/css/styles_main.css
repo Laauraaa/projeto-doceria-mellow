@@ -4,6 +4,9 @@
 @import url(menu.css);
 @import url(nav.css);
 
+body{
+    overflow-x: hidden;
+}
 *{
     padding: 0px;
     margin: 0px;

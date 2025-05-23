@@ -60,17 +60,67 @@ h1{
 .suggestion-item:hover{
     transform: scale(1.05);
 }
-.suggestion-item div{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
-.suggestion-item div, .suggestion-item div p {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
-.suggestion-item div p{
-    font-size: 12px;
+.suggestion-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  align-items: flex-start;
 }
 
+.suggestion-item div p {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+@media(max-width: 400px){
+    #header-mobile-hidden{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        height: 26vh;
+        width: 95vw;
+        border-radius: 10px;
+        position: relative;
+    }
+    header button{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .suggestion-area > div {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 10px;
+    
+
+        max-width: 100vw; 
+        box-sizing: border-box;
+    }
+
+    .suggestion-area > div::-webkit-scrollbar {
+        display: none;
+    }
+
+    .suggestion-item {
+        flex: 0 0 80%; 
+        scroll-snap-align: start;
+    }
+    .suggestion-item div{
+       align-items: flex-start;
+    }
+}
