@@ -55,3 +55,35 @@ h1{
     font-weight: bold;
     text-align: right;
 }
+footer{
+ background-color: #111827;
+ padding: 50px;
+ color: white;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-footer h3{
+    margin: 0;
+    font-size: 22px;
+}
+.left-footer p{
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+.center.footer p{
+    margin: 5px;
+    font-size: 14px;
+}
+.right-footer a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.right-footer a:hover{
+    color: #E471A0;
+}
