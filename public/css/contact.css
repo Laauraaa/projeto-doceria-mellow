@@ -1,0 +1,119 @@
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 600px;
+    display: flex;
+}
+.hero-image {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.contact-section {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    margin-top: -40px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; 
+    padding-left: 0;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+}
+.icon-circle {
+    background-color: #FFBFD9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.details {
+    text-align: left;
+}
+
+.details .label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.details .value {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .contact-section {
+        padding: 30px; 
+        width: 95%; 
+    }
+    .contact-info {
+        align-items: flex-start;
+        padding-left: 0;
+    }
+}
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px; 
+        margin-bottom: 30px;
+    }
+    .contact-section {
+        padding: 20px;
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: center; 
+        gap: 10px;
+    }
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+    .details {
+        text-align: center;
+    }
+    .details .label {
+        font-size: 16px;
+    }
+    .details .value {
+        font-size: 15px;
+    }
+}
