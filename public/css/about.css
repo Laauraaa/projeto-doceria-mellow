@@ -58,17 +58,17 @@
   display: block;
   width: fit-content;
   margin: 20px auto 0;
-  background-color: #f172c2;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .about-botao-instagram:hover {
-  background-color: #e054a7;
+  transform: scale(1.05);
 }
 
 /* RESPONSIVIDADE*/
